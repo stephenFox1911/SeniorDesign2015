@@ -1,0 +1,95 @@
+body {
+    background-color: #363636;
+    border-top: solid 10px #c0392b;
+    font-family: Verdana,Geneva,sans-serif; 
+    color: #ffffff;
+    margin: 0;
+    padding: 5px 0px 0px 0px;
+}
+
+.top-banner {
+  text-align: right;
+  display: block;
+  margin-right: 40px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.top-banner a {
+  color: #ffffff;
+}
+
+h1 {
+    color: #ecf0f1;
+    text-align: center;
+    margin: 15px;
+}
+
+h2 {
+  color: #e74c3c;
+  text-align: center;
+  margin: 10px;
+}
+
+label {
+  text-align: right;
+  clear: both;
+  margin-right: 15px;
+}
+
+form {
+  width: 40%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  float: right;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group input {
+  cursor: pointer;
+  border-radius: 2px;
+  background: #ffffff;
+  border: 1px solid black;
+}
+
+.button-group input[type=submit] {
+  margin-left: 2.5%;
+  width: 45%;
+  float: left;
+}
+
+.button-group input[type=button] {
+  margin-right: 2.5%;
+  width: 45%;
+  float: right;
+}
+
+.event-listing {
+  width: 90%;
+  display: block;
+  background: #ecf0f1;
+  color: #000000;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+.event-listing input[type=button] {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+  background: #ffffff;
+  border: 1px solid black;
+}
