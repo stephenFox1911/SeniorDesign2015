@@ -52,27 +52,27 @@ form {
   float: right;
 }
 
-.button-group {
-  margin-top: 20px;
-}
-
-.button-group input {
+#signin-submit,#create-event-submit {
+  margin-top: 10px;
+  width: 100%;
   cursor: pointer;
   border-radius: 2px;
   background: #ffffff;
   border: 1px solid black;
 }
 
-.button-group input[type=submit] {
-  margin-left: 2.5%;
-  width: 45%;
-  float: left;
+.center-wrapper {
+  text-align: center;
 }
 
-.button-group input[type=button] {
-  margin-right: 2.5%;
-  width: 45%;
-  float: right;
+#create-account-submit,#create-event-redirect,#create-event-cancel {
+  margin-bottom: 10px;
+  width: 40%;
+  max-width: 300px;
+  cursor: pointer;
+  border-radius: 2px;
+  background: #ffffff;
+  border: 1px solid black;
 }
 
 .event-listing {
@@ -86,7 +86,7 @@ form {
   padding: 5px 10px 5px 10px;
 }
 
-.event-listing input[type=button] {
+.join-button {
   width: 100%;
   cursor: pointer;
   border-radius: 2px;

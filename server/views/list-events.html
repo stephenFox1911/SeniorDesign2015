@@ -7,18 +7,14 @@
   <body>
 
     <div class="top-banner">
-      <a href="www.example.com">Sign In</a>
+      <a href="index.html">Sign In</a>
     </div>
     
     <h1>playSports!</h1>
     <h2>List of Events</h2>
 
-    <div class="event-listing">
-      <p>Event Name: Test</p>
-      <ul>
-        <li>Your Name (Owner)</li>
-      </ul>
-      <input type="button" value="Join" />
+    <div class="center-wrapper">
+      <button onclick="location.href = 'create-event.html';" id="create-event-redirect">Create Event</button>
     </div>
 
     <div class="event-listing">
@@ -26,7 +22,15 @@
       <ul>
         <li>Your Name (Owner)</li>
       </ul>
-      <input type="button" value="Join" />
+      <button onclick="joinEvent()" class="join-button">Join</button>
+    </div>
+
+    <div class="event-listing">
+      <p>Event Name: Test</p>
+      <ul>
+        <li>Your Name (Owner)</li>
+      </ul>
+      <button onclick="joinEvent()" class="join-button">Join</button>
     </div>
 
     <script type="text/javascript">
@@ -34,6 +38,10 @@
       $(document).ready(function(){
         //
       });
+
+      function joinEvent() {
+        alert("Event Joined! (not really)");
+      }
 
     </script>
 

@@ -7,13 +7,13 @@
   <body>
 
     <div class="top-banner">
-      <a href="www.example.com">Sign In</a>
+      <a href="index.html">Sign In</a>
     </div>
   
     <h1>playSports!</h1>
     <h2>Create Event</h2>
     
-    <form id="create-event-form">
+    <form id="create-event-form" name="create-event-form" action="../routes/events.js" onsubmit="return validateForm()" method="post">
       <div class="form-group">
         <label for="event-name">Event Name:</label>
         <input name="event-name" type="text" />
@@ -26,17 +26,28 @@
         </ul>
       </div>
 
-      <div class="button-group">
-        <input type="submit" value="Create" />
-        <input type="button" value="Cancel" />
-      </div>
+      <input type="submit" value="Create" id="create-event-submit" />
     </form>
+
+    <div class="center-wrapper">
+      <button onclick="location.href = 'list-events.html';" id="create-event-cancel">Cancel</button>
+    </div>
 
     <script type="text/javascript">
 
       $(document).ready(function(){
         //
       });
+
+      // Validate the two inputs are filled in before submitting the form.
+      function validateForm() {
+        var ename = document.forms["create-event-form"]["event-name"].value;
+        if (ename === null || ename === "") {
+          alert("Event name must be filled out.");
+          return false;
+        }
+        return true;
+      }
 
     </script>
 

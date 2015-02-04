@@ -7,7 +7,7 @@
   <body>
   
     <div class="top-banner">
-      <a href="www.example.com">Sign In</a>
+      <a href="index.html">Sign In</a>
     </div>
 
     <h1>playSports!</h1>
@@ -23,12 +23,13 @@
         <label for="password-login">Password:</label>
         <input name="password-login" type="password" min="4" max="20" />
       </div>
-
-      <div class="button-group">
-        <input type="submit" value="Sign In" />
-        <input type="button" value="Create Account" />
-      </div>
+      
+      <input type="submit" value="Sign In" id="signin-submit" />
     </form>
+
+    <div class="center-wrapper">
+      <button onclick="createAccount()" id="create-account-submit">Create Account</button>
+    </div>
 
     <script type="text/javascript">
 
@@ -47,6 +48,15 @@
         if (pword === null || pword === "") {
           alert("Password must be filled out.");
           return false;
+        }
+        return true;
+      }
+
+      //Create an account with the input fields.
+      function createAccount() {
+        if (validateForm()) {
+          alert("Account created! (not really)");
+          location.href = "list-events.html";
         }
       }
 
